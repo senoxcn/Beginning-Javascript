@@ -91,3 +91,42 @@ console.log(multiplyVal);
 let divideVal = 10;
 divideVal /= 2;
 console.log(divideVal);
+
+const sampleStr = "Alan said, \"Peter is learning JavaScript\".";
+console.log(sampleStr);
+
+const singleQuoteStr = "He said 'Nah, I'd win'.";
+console.log(singleQuoteStr);
+
+const newLine = "First paragraph.\nSecond paragraph.";
+console.log(newLine);
+
+const tabStr = "Testing\t\tthe\t\tjavascript\t\ttab.";
+console.log(tabStr);
+
+const goodStr = 'Jake ask Finn, "Hey, let\'s go on an adventure"';
+//const badStr = 'Finn responds, "Let's go!"';        //error
+
+// use \ as an escape character
+
+const ourStr = "I come first. " + "I come second.";
+console.log(ourStr);
+
+let concatStr = "I come first. ";
+concatStr += "I come second.";
+console.log(concatStr);
+
+const sampleName = "Metacrafters";
+const concatName = "Hello, our name is " + sampleName + ", how are you?";
+console.log(concatName);
+
+const anAdjective = "awesome!";
+let str = "Metracarfters is ";
+str += anAdjective;     //output: Metacrafters is awesome!
+
+//length of a string
+console.log("Alan Peter".length);
+
+//String values are IMMUTABLE (cannot be altered)
+let myStr = "Bob";
+myStr[0] = "J";     //output: no change

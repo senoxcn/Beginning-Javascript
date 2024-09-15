@@ -130,3 +130,113 @@ console.log("Alan Peter".length);
 //String values are IMMUTABLE (cannot be altered)
 let myStr = "Bob";
 myStr[0] = "J";     //output: no change
+
+function test(myCondition) {
+    if (myCondition) {
+        return "It was true";
+    }
+    return "it was false";
+}
+
+//test(true);
+//test(false);
+console.log(test(false));
+
+function equalityTest(myVal) {
+    if (myVal == 10) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+console.log(equalityTest('10'));
+//the == operator performs type coercion, which means it tries to convert the values being compared to a common type before making the comparison.
+
+//Strict equality === operator does not perform a type conversion.
+function equalTest(val) {
+    if (val === 10) {
+        return "Equal";
+    }
+    return "Not Equal";
+}
+console.log(equalTest('10')); // "Not Equal"
+
+function notEqual(myNumber) {
+    if (myNumber != 2) {
+        return "Not equal";
+    }
+    return "Equal";
+}
+console.log(notEqual('2'));
+
+//strict inequality operator !==
+function strict(notNum) {
+    if (notNum !== 3) {
+        return "Not equal";
+    }
+    return "Equal";
+}
+console.log(strict('3'));
+
+function greater(numGreat) {
+    if (numGreat > 5) {
+        return numGreat + " is greater than 5";
+    }
+    return numGreat + " is not greater than 5";
+}
+console.log(greater(10));
+
+function less(numLess) {
+    if (numLess < 5) {
+        return numLess + " is less than 5";
+    }
+    return numLess + " is greater than 5";
+}
+console.log(less('2'));
+
+function andOp(andVal) {
+    if (andVal > 5 && andVal < 10) {
+        return "Yes";
+    }
+    return "No";
+}
+console.log(andOp(7));
+
+function orOp(orVal) {
+    if (orVal > 5 || orVal < 10) {
+        return "Yes";
+    }
+    return "No";
+}
+console.log(orOp(7));
+
+function testFalse(testVal) {
+    if (testVal > 15) {
+        return "Bigger than 15";
+    }
+    else if (testVal < 5) {
+        return "Smaller than 5";
+    }
+    else {
+        return "Between 5 and 15";
+    }
+}
+console.log(testFalse(-16));
+
+function checkNumber(num) {
+    if (num > 10) {
+        return "Greater than 10";
+    }
+    else if (num === 10){
+        return "Equal to 10";
+    }
+    else if (num > 5) {
+        return "Greater than 5 but less than 10";
+    }
+    else {
+        return "5 ir less";
+    }
+}
+console.log(checkNumber(12));
+console.log(checkNumber(10));
+console.log(checkNumber(7));
+console.log(checkNumber(4));

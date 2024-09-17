@@ -240,3 +240,43 @@ console.log(checkNumber(12));
 console.log(checkNumber(10));
 console.log(checkNumber(7));
 console.log(checkNumber(4));
+
+switch (lowercaseLetter) {
+    case "a":
+        console.log("A");
+        break;
+    case "b":
+        console.log("B");
+        break;
+    default:
+        //defaultStatement
+        break;
+}
+
+//ternary operator
+function findGreater(a, b) {
+    return a > b ? "a is greater" : "b is greater or equal";
+}
+
+/*
+function findGreaterOrEqual(a, b) {
+  if (a === b) {
+    return "a and b are equal";
+  }
+  else if (a > b) {
+    return "a is greater";
+  }
+  else {
+    return "b is greater";
+  }
+}
+
+this code can be also written below
+*/
+
+function findGreaterOrEqual(a, b) {
+    return (a === b) ? "a and b are equal"
+        : (a > b) ? "a is greater"
+        : "b is greater";
+}
+//a ? b : c --> 'a' is the condition. 'b' is the code to run when condition returns TRUE, and 'c' is the code to run when the condition returns FALSE.

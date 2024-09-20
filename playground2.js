@@ -30,3 +30,21 @@ console.log(arr1);
 console.log(arr2);
 
 //pop
+const threeArr = [1, 4, 6];
+const oneDown = threeArr.pop();
+console.log(oneDown);
+console.log(threeArr);
+
+//.shift() like works like pop() except it removes the first element instead
+const theArray = ["Stimpson", "J", ["cat"]];
+const removedFromTheArray = theArray.shift();
+console.log(theArray);
+
+//unshift() -> works like push(), but adds the element at the beginning of the array
+const theArray1 = ["Strimpson", "J", ["cat"]];
+theArray1.shift();
+theArray1.unshift("Happy");
+console.log(theArray1);
+
+//objects
+

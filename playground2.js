@@ -47,4 +47,17 @@ theArray1.unshift("Happy");
 console.log(theArray1);
 
 //objects
+const cat = {
+    "name": "Jerry",
+    "legs": 4,
+    "tails": 1,
+    "enemies": ["Water", "Dogs"]
+};
+console.log(cat.name);
+
+const anotherObject = {
+    make: "Ford",
+    5: "five",
+    "model": "focus"
+};
 

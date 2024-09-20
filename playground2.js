@@ -53,7 +53,7 @@ const cat = {
     "tails": 1,
     "enemies": ["Water", "Dogs"]
 };
-console.log(cat.name);
+console.log(cat);
 
 const anotherObject = {
     make: "Ford",
@@ -61,3 +61,38 @@ const anotherObject = {
     "model": "focus"
 };
 
+//accessing object properties using dot notation
+const myObj = {
+    prop1: "val1",
+    prop2: "val2"
+};
+const prop1val = myObj.prop1;
+const prop2val = myObj.prop2;
+
+//bracket notation - use this if the property of the object you are trying to access has a space in its name
+const myObject = {
+    "Space Name": "Kirk",
+    "More Space": "Spock",
+    "NoSpace": "USS Enterprise"
+};
+
+console.log(myObject["Space Name"]);
+myObject['More Space'];
+myObject["NoSpace"];
+
+//updating
+const ourDog = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything!"]
+};
+ourDog.name = "Happy Camper";       //ourDog["name"] = "Happy Camper";
+console.log(ourDog);
+
+//add new properties
+ourDog.bark = "bow-wow";            //ourDog["bark"] = "bow-wow";
+console.log(ourDog);
+
+//delete properties
+delete ourDog.bark;
